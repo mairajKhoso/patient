@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMERGENCY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBG-7Z-THP">
+                                <rect key="frame" x="67" y="190" width="241" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="FIe-m0-eUI"/>
+                                    <constraint firstAttribute="width" constant="241" id="Muo-DX-N2Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" red="0.99208098649978638" green="0.9921995997428894" blue="0.99204069375991821" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteAmbulance" translatesAutoresizingMaskIntoConstraints="NO" id="Cem-dL-Uhu">
+                                <rect key="frame" x="138" y="302" width="99" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="4m7-ml-ufI"/>
+                                    <constraint firstAttribute="width" constant="99" id="fLi-lB-YGb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnA-dA-Phi">
+                                <rect key="frame" x="138" y="246" width="99" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="3Ji-Uc-laS"/>
+                                    <constraint firstAttribute="width" constant="99" id="Vv6-Ss-NuV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" red="0.98001116514205933" green="0.99184542894363403" blue="0.98812752962112427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81676357984542847" green="0.13409727811813354" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cem-dL-Uhu" firstAttribute="top" secondItem="XnA-dA-Phi" secondAttribute="bottom" constant="8" id="0m4-FB-eQc"/>
+                            <constraint firstItem="vBG-7Z-THP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Gx-Ok-pbc"/>
+                            <constraint firstItem="XnA-dA-Phi" firstAttribute="top" secondItem="vBG-7Z-THP" secondAttribute="bottom" constant="8" id="8Mp-pa-8nb"/>
+                            <constraint firstItem="Cem-dL-Uhu" firstAttribute="centerX" secondItem="XnA-dA-Phi" secondAttribute="centerX" id="Odw-um-hP4"/>
+                            <constraint firstItem="XnA-dA-Phi" firstAttribute="centerX" secondItem="vBG-7Z-THP" secondAttribute="centerX" id="WK0-dB-LLe"/>
+                            <constraint firstItem="vBG-7Z-THP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="fcl-EX-c7x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WhiteAmbulance" width="480" height="480"/>
+    </resources>
+</document>
